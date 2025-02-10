@@ -108,27 +108,6 @@ The application will be available on http://localhost:5173
 - `GET /api/purchases/:id` - Get purchases by customer ID
 - `DELETE /api/purchases/:id` - Delete purchase
 
-## 🏗️ Project Structure
-
-```
-customer-management/
-│
-├── frontend/                # React (Vite) frontend
-│   ├── src/
-│   │   ├── components/     # React components
-│   │   ├── services/       # API services
-│   │   └── App.jsx
-│   └── package.json
-│
-├── backend/                 # Node.js backend
-│   ├── routes/             # API routes
-│   ├── db.js              # Database configuration
-│   ├── .env               # Environment variables
-│   └── package.json
-│
-└── README.md
-```
-
 ## 💻 Technology Stack
 
 - **Frontend:**
