@@ -49,26 +49,26 @@ USE customerdb;
 CREATE TABLE customers (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
-    contact VARCHAR(20),
-    email VARCHAR(100),
-    contact_person VARCHAR(100),
-    whatsapp VARCHAR(20),
+    contact VARCHAR(15) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    contact_person VARCHAR(255),
+    whatsapp VARCHAR(15),
     address TEXT,
     city VARCHAR(100),
     state VARCHAR(100),
-    pin_code VARCHAR(20),
-    gst_no VARCHAR(50),
-    pan_no VARCHAR(50)
-);
+    pin_code VARCHAR(10),
+    gst_no VARCHAR(20),
+    pan_no VARCHAR(10)
+); 
 
 CREATE TABLE purchases (
     id INT AUTO_INCREMENT PRIMARY KEY,
     customer_id INT,
-    purchase_date DATE,
+    product_name VARCHAR(255),
     amount DECIMAL(10,2),
-    product_details TEXT,
+    date DATE,
     FOREIGN KEY (customer_id) REFERENCES customers(id) ON DELETE CASCADE
-);
+); 
 ```
 
 5. Set up the frontend:
@@ -153,13 +153,4 @@ customer-management/
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- React documentation
-- Node.js documentation
-- MySQL documentation
-- Express.js documentation
