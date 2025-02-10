@@ -21,8 +21,8 @@ Before you begin, ensure you have installed:
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd customer-management-system
+git clone https://github.com/SurabSebait/InewTech-Project.git
+cd filename
 ```
 
 2. Set up the backend:
