@@ -36,7 +36,7 @@ npm install
 PORT=5000
 DB_HOST=localhost
 DB_USER=root
-DB_PASSWORD='Nisha@12345'
+DB_PASSWORD= YOUR_PASSWORD
 DB_NAME=customerdb
 ```
 
